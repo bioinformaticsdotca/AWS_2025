@@ -1,38 +1,35 @@
 --- 
-title: "NAME OF WORKSHOP YEAR"
-author: "Faculty: INSTRUCTOR AND TA NAMES"
-date: "DATES"
+title: "AWS/UNIX 2025"
+author: Jose Hector Galvez, Zhibin Lu & Rob Syme
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-url: https://cbw-dev.github.io/bookdown-template/ # CHANGE THIS LINK TO YOUR LANDING PAGE LINK
+url: https://bioinformaticsdotca.github.io/AWS_2025/ 
 cover-image: img/bioinformatics_logo.png
 description: |
-  Workshop website for the YEAR WORKSHOP Canadian Bioinformatics Workshop
+  Wwbsite for the Canadian Bioinformatics Workshops' AWS/Unix primer
 link-citations: yes
-github-repo: cbw-dev/bookdown-template # CHANGE THIS TO YOUR OWN REPO
+github-repo: cbw-dev/AWS_2025 # CHANGE THIS TO YOUR OWN REPO
 favicon: img/favicon.ico
 ---
 
-# (PART) Introduction {-}
-
 # Workshop Info
 
-Welcome to the YEAR WORKSHOP Canadian Bioinformatics Workshop webpage!  
-
-<!--## Class Photo
-
-After workshop concludes, YOUR EMBED CODE HERE-->
+The UNIX exercises here are modified versions of the [Software Carpentry Unix shell lesson](https://swcarpentry.github.io/shell-novice/). [Licensed under CC-BY 4.0 2018–2021 by The Carpentries.](https://carpentries.org/)
 
 ## Schedule
 
-YOUR SCHEDULE HERE
+**Beginner/Advanced Microbiome Analysis 2025**: Friday, May 23, 2025
 
-<!--Copy paste a table into https://www.tablesgenerator.com/markdown_tables (select convert to markdown) to create a table in markdown.   
--->
-
-## Pre-work
-
-[You can find your pre-work here.](LINK TO PREWORK)
-
-
+| (PST) | (EST) |                      Module                     |
+|:-----:|:-----:|:-----------------------------------------------:|
+|  9:00 | 12:00 |               Welcome Introduction              |
+|  9:10 | 12:10 |            Module 1: Logging into AWS           |
+| 10:10 | 13:10 |                   Short Break                   |
+| 10:15 | 13:15 | Module 2: Introduction to the UNIX Command Line |
+| 10:35 | 13:35 |           Module 3: File Manipulation           |
+| 11:05 | 14:05 |                    Long Break                   |
+| 12:05 | 15:05 |  Module 4: Searching and Sorting Through Files  |
+| 13:00 | 16:00 |                   Short Break                   |
+| 13:05 | 16:05 |             Module 5: Shell scripts             |
+| 14:00 | 17:00 |                     Finished                    |
