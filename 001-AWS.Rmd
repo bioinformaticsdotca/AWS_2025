@@ -1,6 +1,6 @@
-# Logging into AWS
+# 1. Logging into AWS
 
-[Slides for this module are available here]().
+[Slides]().
 
 ### Logging into the Amazon Cloud During the Workshop  
 

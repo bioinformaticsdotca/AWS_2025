@@ -1,6 +1,6 @@
 --- 
 title: "AWS/UNIX 2025"
-author: Jose Hector Galvez, Zhibin Lu & Rob Syme
+author: Material by Jose Hector Galvez, Zhibin Lu & Rob Syme
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -13,11 +13,19 @@ github-repo: cbw-dev/AWS_2025 # CHANGE THIS TO YOUR OWN REPO
 favicon: img/favicon.ico
 ---
 
-# Workshop Info
+# AWS/UNIX primer info
 
 The UNIX exercises here are modified versions of the [Software Carpentry Unix shell lesson](https://swcarpentry.github.io/shell-novice/). [Licensed under CC-BY 4.0 2018–2021 by The Carpentries.](https://carpentries.org/)
 
-## Schedule
+### Data download
+We will be using Amazon Web Services for the primer session. If you are not able to attend this session live, you can download the data we used here: 
+
+* [data.zip](https://drive.google.com/file/d/1Rckn6rUl9Tv1XnUcG7MvcAztqhqqCIs-/view?usp=drive_link)
+* [gff3](https://drive.google.com/file/d/1GX4LZlIkXiRQqOZD6Tq30eErSZ3Dgd6n/view?usp=drive_link)
+
+You will need a UNIX environment (like a Linux/Mac computer or Windows Subsystem for Linux) to work through the material.
+
+### Schedule
 
 **Beginner/Advanced Microbiome Analysis 2025**: Friday, May 23, 2025
 

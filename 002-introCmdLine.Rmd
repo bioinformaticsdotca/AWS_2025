@@ -1,13 +1,6 @@
-# Introduction to the command line
+# 2. Introduction to the command line
 
-<style>
-div.hidecode + pre {display: none}
-</style>
-<script>
-doclick=function(e){
-e.nextSibling.nextSibling.style.display="block";
-}
-</script>
+
 
 [Slides]()
 

@@ -1,9 +1,3 @@
-## CBW WORKSHOP YEAR
+## CBW AWS/UNIX primer 2025
 
-[Workshop Website](YOUR WORKSHOP URL HERE)
-
-CITY, PROVINCE(S)  
-Instructors: INSTRUCTOR NAMES  
-TAs: TA NAMES
-
-OUTLINE HERE
+[Live website](https://bioinformaticsdotca.github.io/AWS_2025/)

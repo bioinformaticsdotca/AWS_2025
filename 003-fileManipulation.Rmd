@@ -1,13 +1,5 @@
-# File manipulation
+# 3. File manipulation
 
-<style>
-div.hidecode + pre {display: none}
-</style>
-<script>
-doclick=function(e){
-e.nextSibling.nextSibling.style.display="block";
-}
-</script>
 
 [Slides]()
 
