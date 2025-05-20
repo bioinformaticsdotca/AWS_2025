@@ -1,1 +1,53 @@
 # Introduction to the command line
+
+<style>
+div.hidecode + pre {display: none}
+</style>
+<script>
+doclick=function(e){
+e.nextSibling.nextSibling.style.display="block";
+}
+</script>
+
+[Slides]()
+
+### Exercise: Exploring the filesystem
+
+1. Connect to your AWS instance
+
+
+2. Type the `ls` command - what is the output?
+
+<details>
+  <summary>
+Solution
+  </summary>
+
+```bash
+$ ls
+CourseData  R  workspace
+```
+
+
+The `ls` command lists the contents of a working directory.
+
+</details>  <br>
+
+
+3. Type the `pwd` command - what is the output?
+
+<details>
+  <summary>
+Solution
+  </summary>
+
+
+```bash
+$ pwd
+/home/ubuntu
+```
+
+The `pwd` command shows the absolute *path to the working directory*.
+
+</details>
+
