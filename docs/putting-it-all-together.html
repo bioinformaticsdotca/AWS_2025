@@ -247,7 +247,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb65"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb65-1"><a href="putting-it-all-together.html#cb65-1" tabindex="-1"></a><span class="bu">echo</span> <span class="at">-n</span> <span class="st">&quot;atlanta.gbff: &quot;</span></span>
 <span id="cb65-2"><a href="putting-it-all-together.html#cb65-2" tabindex="-1"></a><span class="fu">grep</span> <span class="st">&quot;/locus_tag=&quot;</span> atlanta.gbff <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span></code></pre></div>
 <p>Now when we run the script:</p>
-<div class="sourceCode" id="cb66"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb66-1"><a href="putting-it-all-together.html#cb66-1" tabindex="-1"></a><span class="ex">$</span> nano count_tags.sh</span></code></pre></div>
+<div class="sourceCode" id="cb66"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb66-1"><a href="putting-it-all-together.html#cb66-1" tabindex="-1"></a><span class="ex">$</span> bash count_tags.sh</span></code></pre></div>
 <pre><code>atlanta.gbff 6109</code></pre>
 <p>What if we want to count the number of locus tags in many files? Let’s introduce a new concept: loopingOpen up our script again</p>
 <div class="sourceCode" id="cb68"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb68-1"><a href="putting-it-all-together.html#cb68-1" tabindex="-1"></a><span class="ex">$</span> nano count_tags.sh</span></code></pre></div>

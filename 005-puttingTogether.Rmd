@@ -50,7 +50,7 @@ grep "/locus_tag=" atlanta.gbff | sort | uniq | wc -l
 Now when we run the script:
 
 ```bash
-$ nano count_tags.sh
+$ bash count_tags.sh
 ```
 
 ```
