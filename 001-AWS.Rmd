@@ -1,6 +1,6 @@
 # 1. Logging into AWS
 
-[Slides]().
+<iframe src="https://docs.google.com/presentation/d/1fZeCDynJ5iGOZJPlzapa5HI2G5DpxGeQ/preview" width="640" height="480" allow="autoplay"></iframe>  
 
 ### Logging into the Amazon Cloud During the Workshop  
 
