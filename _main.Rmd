@@ -27,20 +27,22 @@ You will need a UNIX environment (like a Linux/Mac computer or Windows Subsystem
 
 ### Schedule
 
-**RNA-seq and scRNA-seq Analysis 2025**: Friday, July 4, 2025
+**RNA-seq and scRNA-seq Analysis 2025**: Friday, October 31, 2025
 
-| (MST) | (EST) |                      Module                     |
-|:-----:|:-----:|:-----------------------------------------------:|
-|  9:00 | 11:00 |               Welcome Introduction              |
-|  9:10 | 11:10 |            Module 1: Logging into AWS           |
-| 10:10 | 12:10 |                   Short Break                   |
-| 10:15 | 12:15 | Module 2: Introduction to the UNIX Command Line |
-| 10:35 | 12:35 |           Module 3: File Manipulation           |
-| 11:05 | 13:05 |                    Long Break                   |
-| 12:05 | 14:05 |  Module 4: Searching and Sorting Through Files  |
-| 13:00 | 15:00 |                   Short Break                   |
-| 13:05 | 15:05 |             Module 5: Shell scripts             |
-| 14:00 | 16:00 |                     Finished                    |
+| (ADT) |                      Module                     |
+|:-----:|:-----------------------------------------------:|
+| 10:00 |               Welcome Introduction              |
+| 10:10 |            Module 1: Logging into AWS           |
+| 11:10 |                   Short Break                   |
+| 11:15 | Module 2: Introduction to the UNIX Command Line |
+| 11:35 |           Module 3: File Manipulation           |
+| 12:05 |                    Long Break                   |
+| 13:05 |  Module 4: Searching and Sorting Through Files  |
+| 14:00 |                   Short Break                   |
+| 14:05 |             Module 5: Shell scripts             |
+| 15:00 |                     Finished                    |
+
+
 
 <!--chapter:end:index.Rmd-->
 
@@ -62,7 +64,7 @@ BIO GOES HERE-->
 
 #### Dr. Gustavo Sganzerla Martinez (he/him)
 
-<img src="./img/faculty/dan-gaston.jpg" width="200" alt="Photo of Gustavo Sganzerla Martinez">
+<img src="./img/faculty/GustavoSganzerlaMartinez.png" width="200" alt="Photo of Gustavo Sganzerla Martinez">
 
 >Postdoctoral Fellow <br>
 Dalhousie University  <br>
