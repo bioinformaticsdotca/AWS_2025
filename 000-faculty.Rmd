@@ -16,7 +16,7 @@ BIO GOES HERE-->
 
 #### Dr. Gustavo Sganzerla Martinez (he/him)
 
-<img src="./img/faculty/dan-gaston.jpg" width="200" alt="Photo of Gustavo Sganzerla Martinez">
+<img src="./img/faculty/GustavoSganzerlaMartinez.png" width="200" alt="Photo of Gustavo Sganzerla Martinez">
 
 >Postdoctoral Fellow <br>
 Dalhousie University  <br>
