@@ -4,23 +4,23 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Meet Your Faculty | NAME OF WORKSHOP YEAR</title>
-  <meta name="description" content="Workshop website for the YEAR WORKSHOP Canadian Bioinformatics Workshop" />
-  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+  <title>Meet Your Faculty | AWS/UNIX 2025</title>
+  <meta name="description" content="Wwbsite for the Canadian Bioinformatics Workshops’ AWS/Unix primer" />
+  <meta name="generator" content="bookdown 0.44 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Meet Your Faculty | NAME OF WORKSHOP YEAR" />
+  <meta property="og:title" content="Meet Your Faculty | AWS/UNIX 2025" />
   <meta property="og:type" content="book" />
-  <meta property="og:image" content="https://cbw-dev.github.io/bookdown-template/img/bioinformatics_logo.png" />
-  <meta property="og:description" content="Workshop website for the YEAR WORKSHOP Canadian Bioinformatics Workshop" />
-  <meta name="github-repo" content="cbw-dev/bookdown-template" />
+  <meta property="og:image" content="https://bioinformaticsdotca.github.io/AWS_2025/img/bioinformatics_logo.png" />
+  <meta property="og:description" content="Wwbsite for the Canadian Bioinformatics Workshops’ AWS/Unix primer" />
+  <meta name="github-repo" content="cbw-dev/AWS_2025" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Meet Your Faculty | NAME OF WORKSHOP YEAR" />
+  <meta name="twitter:title" content="Meet Your Faculty | AWS/UNIX 2025" />
   
-  <meta name="twitter:description" content="Workshop website for the YEAR WORKSHOP Canadian Bioinformatics Workshop" />
-  <meta name="twitter:image" content="https://cbw-dev.github.io/bookdown-template/img/bioinformatics_logo.png" />
+  <meta name="twitter:description" content="Wwbsite for the Canadian Bioinformatics Workshops’ AWS/Unix primer" />
+  <meta name="twitter:image" content="https://bioinformaticsdotca.github.io/AWS_2025/img/bioinformatics_logo.png" />
 
-<meta name="author" content="Faculty: INSTRUCTOR AND TA NAMES" />
+<meta name="author" content="Material by Jose Hector Galvez, Zhibin Lu &amp; Rob Syme" />
 
 
 
@@ -30,7 +30,7 @@
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="index.html"/>
-<link rel="next" href="data-and-compute-setup.html"/>
+<link rel="next" href="logging-into-aws.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -54,8 +54,9 @@
 
 
 <style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -65,7 +66,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -139,29 +140,68 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a href="https://bioinformaticsdotca.github.io/">
  <img src="img/bioinformatics_logo.png" width="90%" alt="bioinformatics.ca logo" style="display:block; margin-left:auto; margin-right:auto; margin-top:15px;">
  </a>
- <li><center><strong><a href="./"><br>YOUR WORKSHOP NAME<br><br></a></strong></center></li>
+ <li><center><strong><a href="./"><br>AWS/UNIX primer 2025<br><br></a></strong></center></li>
  <a href="./">
- <img src="img/MISSINGLOGO.PNG" width="70%" alt="WORKSHOP NAME logo" style="display:block; margin-left:auto; margin-right:auto; ">
+ <img src="img/Cloud_icon.jpg" width="70%" alt="AWS/Unix primer logo." style="display:block; margin-left:auto; margin-right:auto; ">
  </a>
  <br>
 
 <li class="divider"></li>
-<li class="part"><span><b>I Introduction</b></span></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Workshop Info</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>AWS/UNIX primer info</a>
 <ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-download"><i class="fa fa-check"></i>Data download</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#schedule"><i class="fa fa-check"></i>Schedule</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#pre-work"><i class="fa fa-check"></i>Pre-work</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="meet-your-faculty.html"><a href="meet-your-faculty.html"><i class="fa fa-check"></i>Meet Your Faculty</a></li>
-<li class="chapter" data-level="" data-path="data-and-compute-setup.html"><a href="data-and-compute-setup.html"><i class="fa fa-check"></i>Data and Compute Setup</a></li>
-<li class="part"><span><b>II Modules</b></span></li>
-<li class="chapter" data-level="" data-path="module-1.html"><a href="module-1.html"><i class="fa fa-check"></i>Module 1</a>
+<li class="chapter" data-level="" data-path="meet-your-faculty.html"><a href="meet-your-faculty.html"><i class="fa fa-check"></i>Meet Your Faculty</a>
 <ul>
-<li class="chapter" data-level="" data-path="module-1.html"><a href="module-1.html#lecture"><i class="fa fa-check"></i>Lecture</a>
-<ul>
-<li class="chapter" data-level="" data-path="module-1.html"><a href="module-1.html#downloads"><i class="fa fa-check"></i>Downloads</a></li>
+<li class="chapter" data-level="" data-path="meet-your-faculty.html"><a href="meet-your-faculty.html#instructors"><i class="fa fa-check"></i>Instructors</a></li>
+<li class="chapter" data-level="" data-path="meet-your-faculty.html"><a href="meet-your-faculty.html#teaching-assistants"><i class="fa fa-check"></i>Teaching Assistants</a></li>
+<li class="chapter" data-level="" data-path="meet-your-faculty.html"><a href="meet-your-faculty.html#facilitator"><i class="fa fa-check"></i>Facilitator</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="module-1.html"><a href="module-1.html#lab"><i class="fa fa-check"></i>Lab</a></li>
+<li class="chapter" data-level="" data-path="logging-into-aws.html"><a href="logging-into-aws.html"><i class="fa fa-check"></i>1. Logging into AWS</a>
+<ul>
+<li class="chapter" data-level="" data-path="logging-into-aws.html"><a href="logging-into-aws.html#logging-into-the-amazon-cloud-during-the-workshop"><i class="fa fa-check"></i>Logging into the Amazon Cloud During the Workshop</a></li>
+<li class="chapter" data-level="" data-path="logging-into-aws.html"><a href="logging-into-aws.html#logging-in-with-ssh-maclinux"><i class="fa fa-check"></i>Logging in with ssh (Mac/Linux)</a></li>
+<li class="chapter" data-level="" data-path="logging-into-aws.html"><a href="logging-into-aws.html#logging-in-with-openssh-client-windows"><i class="fa fa-check"></i>Logging in with OpenSSH client (Windows)</a></li>
+<li class="chapter" data-level="" data-path="logging-into-aws.html"><a href="logging-into-aws.html#file-system-layout"><i class="fa fa-check"></i>File System Layout</a></li>
+<li class="chapter" data-level="" data-path="logging-into-aws.html"><a href="logging-into-aws.html#workspace"><i class="fa fa-check"></i>Workspace</a></li>
+<li class="chapter" data-level="" data-path="logging-into-aws.html"><a href="logging-into-aws.html#rstudio"><i class="fa fa-check"></i>RStudio</a></li>
+<li class="chapter" data-level="" data-path="logging-into-aws.html"><a href="logging-into-aws.html#jupyter-notebook"><i class="fa fa-check"></i>Jupyter Notebook</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction-to-the-command-line.html"><a href="introduction-to-the-command-line.html"><i class="fa fa-check"></i>2. Introduction to the command line</a>
+<ul>
+<li class="chapter" data-level="" data-path="introduction-to-the-command-line.html"><a href="introduction-to-the-command-line.html#exercise-exploring-the-filesystem"><i class="fa fa-check"></i>Exercise: Exploring the filesystem</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="file-manipulation.html"><a href="file-manipulation.html"><i class="fa fa-check"></i>3. File manipulation</a>
+<ul>
+<li class="chapter" data-level="" data-path="file-manipulation.html"><a href="file-manipulation.html#exercise-reading-text-files"><i class="fa fa-check"></i>Exercise: Reading text files</a></li>
+<li class="chapter" data-level="" data-path="file-manipulation.html"><a href="file-manipulation.html#exercise-editing-text-files"><i class="fa fa-check"></i>Exercise: Editing text files</a></li>
+<li class="chapter" data-level="" data-path="file-manipulation.html"><a href="file-manipulation.html#reference-material"><i class="fa fa-check"></i>Reference material</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html"><i class="fa fa-check"></i>4. Searching and sorting through files</a>
+<ul>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#setup"><i class="fa fa-check"></i>Setup</a></li>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#data-exploration"><i class="fa fa-check"></i>Data Exploration</a></li>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#sorting"><i class="fa fa-check"></i>Sorting</a>
+<ul>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#what-does-mean"><i class="fa fa-check"></i>What Does &gt;&gt; Mean?</a></li>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#running-commands-together"><i class="fa fa-check"></i>Running Commands Together</a></li>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#piping-commands-together"><i class="fa fa-check"></i>Piping Commands Together</a></li>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#pipe-reading-comprehension"><i class="fa fa-check"></i>Pipe Reading Comprehension</a></li>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#pipe-construction"><i class="fa fa-check"></i>Pipe Construction</a></li>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#which-pipe"><i class="fa fa-check"></i>Which Pipe?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#checking-files"><i class="fa fa-check"></i>Checking Files</a>
+<ul>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#wildcard-expressions"><i class="fa fa-check"></i>Wildcard Expressions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="searching-and-sorting-through-files.html"><a href="searching-and-sorting-through-files.html#key-points"><i class="fa fa-check"></i>Key Points</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="putting-it-all-together.html"><a href="putting-it-all-together.html"><i class="fa fa-check"></i>5. Putting it all together</a>
+<ul>
+<li class="chapter" data-level="" data-path="putting-it-all-together.html"><a href="putting-it-all-together.html#writing-your-first-script"><i class="fa fa-check"></i>Writing your first script</a></li>
+<li class="chapter" data-level="" data-path="putting-it-all-together.html"><a href="putting-it-all-together.html#awk"><i class="fa fa-check"></i>Awk</a></li>
+<li class="chapter" data-level="" data-path="putting-it-all-together.html"><a href="putting-it-all-together.html#key-points-1"><i class="fa fa-check"></i>Key Points</a></li>
 </ul></li>
 <li class="divider"></li>
 <h1 id="sponsors">Sponsors</h1>
@@ -173,11 +213,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <br><br>
 <a href="https://oicr.on.ca/"><img src="img/sponsors/oicr.png" width=25% style="display:inline-block;" style="padding-bottom: 20px" alt="Ontario Institute for Cancer Research logo.">
 <a href="https://www.hpcforhealth.ca/"><img src="img/sponsors/hpc4health.png" width=60% style="display:inline-block;" style="padding-bottom: 20px "alt="HPC4Health logo.">
-<br><br>
-<a href="https://www.bioinformatics.ca"><img src="img/sponsors/YOUR-SPONSOR-HERE.SVG" style="display:inline-block;" width=35% style="padding-bottom: 20px" alt="ORGANIZATION logo."> <!--- replace the directory with your sponsor logo --->
-<a href="https://www.bioinformatics.ca"><img src="img/sponsors/YOUR-SPONSOR-HERE.SVG" style="display:inline-block;" width=35% style="padding-bottom: 20px" alt="ORGANIZATION logo."> <!--- replace the directory with your sponsor logo --->
-<br><br>
-<a href="https://www.bioinformatics.ca"><img src="img/sponsors/YOUR-SPONSOR-HERE.SVG" width=60% style="padding-bottom: 20px" alt="ORGANIZATION logo."> <!--- replace the directory with your sponsor logo --->
 
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li></center>
 
@@ -190,7 +225,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">NAME OF WORKSHOP YEAR</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AWS/UNIX 2025</a>
           </h1>
         </div>
 
@@ -200,53 +235,59 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="meet-your-faculty" class="section level1 hasAnchor">
 <h1>Meet Your Faculty<a href="meet-your-faculty.html#meet-your-faculty" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="name" class="section level4 hasAnchor">
-<h4>NAME<a href="meet-your-faculty.html#name" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p><img src="img/faculty/MISSINGHEADSHOT.png" width="200" alt="Photo of NAME"></p>
-<blockquote>
-<p>JOB TITLE <br>
+<!--#### NAME
+
+<img src="img/faculty/MISSINGHEADSHOT.PNG" width="200" alt="Photo of NAME">
+
+>JOB TITLE <br>
 INSTITUTION <br>
-LOCATION</p>
-<p>— CONTACT INFO, IF PROVIDED</p>
-</blockquote>
-<p>BIO GOES HERE</p>
-</div>
-<div id="michelle-brazas-phd" class="section level4 hasAnchor">
-<h4>Michelle Brazas, PhD<a href="meet-your-faculty.html#michelle-brazas-phd" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p><img src="img/faculty/michelle-brazas.jpg" width="200" alt="Photo of Michelle Brazas."></p>
-<blockquote>
-<p>Scientific Director <br>
-Canadian Bioinformatics Workshops (CBW) <br>
-Toronto, ON, CA</p>
-<p>— <a href="mailto:director@bioinformatics.ca" class="email">director@bioinformatics.ca</a></p>
-</blockquote>
-<p>Dr. Michelle Brazas is the Associate Director for Adaptive Oncology at the Ontario Institute for
-Cancer Research (OICR), and acting Scientific Director at Bioinformatics.ca. Previously, Dr.
-Brazas was the Program Manager for Bioinformatics.ca and a faculty member in
-Biotechnology at BCIT. Michelle co-founded and runs the Toronto Bioinformatics User Group
-(TorBUG) now in its 11th season, and plays an active role in the International Society of
-Computational Biology where she sits on the Board of Directors and Executive Board.</p>
-</div>
-<div id="nia-hughes-sheher" class="section level4 hasAnchor">
-<h4>Nia Hughes (she/her)<a href="meet-your-faculty.html#nia-hughes-sheher" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p><img src="img/faculty/nia-hughes.jpeg" width="200" alt="Photo of Nia Hughes."></p>
-<blockquote>
-<p>Platform Training Manager, Canadian Bioinformatics Hub<br>
-Ontario Institute for Cancer Research<br>
-Toronto, ON, Canada</p>
-<p>— <a href="mailto:training@bioinformatics.ca" class="email">training@bioinformatics.ca</a></p>
-</blockquote>
-<p>Nia is the Platform Training Manager for the Canadian Bioinformatics Hub, where she coordinates the Canadian Bioinformatics Workshop Series. Prior to starting at OICR, she completed her M.Sc. in Bioinformatics from the University of Guelph in 2020 before working there as a bioinformatician studying epigenetic and transcriptomic patterns across maize varieties.</p>
+LOCATION
+>
+> --- CONTACT INFO, IF PROVIDED
 
-<!--
-IF YOUR WORKSHOP DOES NOT INCLUDE COMPUTE:
-- REMOVE "AND COMPUTE SETUP" FROM THE TOP-LEVEL HEADER
-- DELETE THE LAST SECTION (COMPUTE SETUP)
+BIO GOES HERE-->
+<div id="instructors" class="section level3 hasAnchor">
+<h3>Instructors<a href="meet-your-faculty.html#instructors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="dr.-gustavo-sganzerla-martinez-hehim" class="section level4 hasAnchor">
+<h4>Dr. Gustavo Sganzerla Martinez (he/him)<a href="meet-your-faculty.html#dr.-gustavo-sganzerla-martinez-hehim" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="./img/faculty/dan-gaston.jpg" width="200" alt="Photo of Gustavo Sganzerla Martinez"></p>
+<blockquote>
+<p>Postdoctoral Fellow <br>
+Dalhousie University <br>
+Halifax, NS, Canada</p>
+<p>— <a href="mailto:gustavo.sganzerla@dal.ca" class="email">gustavo.sganzerla@dal.ca</a></p>
+</blockquote>
+<p>Dr. Gustavo Sganzerla Martinez is a postdoctoral fellow at Dalhousie University. Gustavo’s work sits at the very intersection between computer science and biology. By being fascinated by coding and how computers work, Gustavo develops computational solutions for biological problems.</p>
+</div>
+</div>
+<div id="teaching-assistants" class="section level3 hasAnchor">
+<h3>Teaching Assistants<a href="meet-your-faculty.html#teaching-assistants" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="sarah-russell-sheher" class="section level4 hasAnchor">
+<h4>Sarah Russell (she/her)<a href="meet-your-faculty.html#sarah-russell-sheher" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="img/faculty/sarah-russell.png" width="200" alt="Photo of Sarah Russell"></p>
+<blockquote>
+<p>Genetic Analysis Specialist <br>
+IWK Health <br>
+Halifax, Nova Scotia, Canada</p>
+<p>— <a href="mailto:sarah.russell@iwk.nshealth.ca" class="email">sarah.russell@iwk.nshealth.ca</a></p>
+</blockquote>
+<p>Sarah Russell is a Genetic Analysis Specialist at IWK Health, where she applies bioinformatics tools to support the clinical interpretation of genomic data. Her work focuses on developing and maintaining NGS workflows that ensure the accuracy and quality of genetic test results and clinical reporting. Her previous work involved the development and validation of bioinformatic solutions for somatic profiling of solid tumor panels used in clinical diagnostics.</p>
+</div>
+</div>
+<div id="facilitator" class="section level3 hasAnchor">
+<h3>Facilitator<a href="meet-your-faculty.html#facilitator" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="ben-fisher-hehim" class="section level4 hasAnchor">
+<h4>Ben Fisher (he/him)<a href="meet-your-faculty.html#ben-fisher-hehim" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="img/faculty/ben-fisher.jpg" width="200" alt="Photo of Ben Fisher"></p>
+<blockquote>
+<p>Regional Coordinator, CBH Atlantic <br>
+Canadian Bioinformatics Hub, Dalhousie University <br>
+Halifax, NS, Canada</p>
+<p>— <a href="mailto:atlantic@bioinformatics.ca" class="email">atlantic@bioinformatics.ca</a></p>
+</blockquote>
+<p>Ben has a Master of Science degree in Microbiology and Immunology, completing his bioinformatics training under Dr. Morgan Langille at Dalhousie University. Throughout his training, he has instructed others in genetics, molecular biology, and microbiome data science. Ben is passionate about continued education of trainees and professionals, and firmly believes that enhancing bioinformatics and computational biology competencies will support the success of Canada’s current and future scientists.</p>
 
-IF YOUR WORKSHOP INCLUDES COMPUTE:
-- AFTER THE WORKSHOP, ADD DATA DOWNLOAD LINKS, AWS MACHINE IMAGE INSTRUCTIONS, ETC.
-- IF IT IS MORE APPROPRIATE, YOU CAN INCLUDE THE DATA DOWNLOAD LINKS IN EACH OF THE MODULES.
--->
+</div>
 </div>
 </div>
             </section>
@@ -255,7 +296,7 @@ IF YOUR WORKSHOP INCLUDES COMPUTE:
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="data-and-compute-setup.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="logging-into-aws.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -269,42 +310,42 @@ IF YOUR WORKSHOP INCLUDES COMPUTE:
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/cbw-dev/bookdown-template/blob/main/001-faculty.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["_main.pdf", "_main.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/bioinformaticsdotca/AWS_2025/blob/main/000-faculty.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["_main.pdf", "_main.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>
