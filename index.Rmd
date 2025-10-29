@@ -27,7 +27,7 @@ You will need a UNIX environment (like a Linux/Mac computer or Windows Subsystem
 
 ### Schedule
 
-**RNA-seq and scRNA-seq Analysis 2025**: Friday, October 31, 2025
+**Genomics for Precision Oncology AWS/UNIX pre-session 2025**: Friday, October 31, 2025
 
 | (ADT) |                      Module                     |
 |:-----:|:-----------------------------------------------:|
