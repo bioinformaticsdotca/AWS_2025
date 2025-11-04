@@ -27,19 +27,19 @@ You will need a UNIX environment (like a Linux/Mac computer or Windows Subsystem
 
 ### Schedule
 
-**Genomics for Precision Oncology AWS/UNIX pre-session 2025**: Friday, October 31, 2025
+**Genomics for Precision Oncology AWS/UNIX pre-session 2025**: Thursday, November 13, 2025
 
-| (ADT) |                      Module                     |
+| (ET) |                      Module                     |
 |:-----:|:-----------------------------------------------:|
-| 10:00 |               Welcome Introduction              |
-| 10:10 |            Module 1: Logging into AWS           |
-| 11:10 |                   Short Break                   |
-| 11:15 | Module 2: Introduction to the UNIX Command Line |
-| 11:35 |           Module 3: File Manipulation           |
-| 12:05 |                    Long Break                   |
-| 13:05 |  Module 4: Searching and Sorting Through Files  |
-| 14:00 |                   Short Break                   |
-| 14:05 |             Module 5: Shell scripts             |
-| 15:00 |                     Finished                    |
+| 11:00 |               Welcome Introduction              |
+| 11:10 |            Module 1: Logging into AWS           |
+| 12:10 |                   Short Break                   |
+| 12:15 | Module 2: Introduction to the UNIX Command Line |
+| 12:35 |           Module 3: File Manipulation           |
+| 13:05 |                    Long Break                   |
+| 14:05 |  Module 4: Searching and Sorting Through Files  |
+| 15:00 |                   Short Break                   |
+| 15:05 |             Module 5: Shell scripts             |
+| 16:00 |                     Finished                    |
 
 
