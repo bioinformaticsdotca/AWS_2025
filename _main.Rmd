@@ -64,7 +64,7 @@ BIO GOES HERE-->
 
 #### Dr. Idowu Olawoye
 
-<img src="./img/faculty/idowu-olawoya.png" width="200" alt="Photo of Idowu Olawoya">
+<img src="./img/faculty/idowu-olawoya.jpg" width="200" alt="Photo of Idowu Olawoya">
 
 >Postdoctoral Associate <br>
 University of Western Ontario  <br>
