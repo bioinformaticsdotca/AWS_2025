@@ -76,17 +76,17 @@ Idowu is a postdoctoral associate in the Guthrie Lab at the University of Wester
 
 ### Teaching Assistants
 
-#### Information coming soon
+#### Charlie Barclay
 
-<img src="./img/faculty/MISSINGHEADSHOT.png" width="200" alt="Photo of Name person">
+<img src="./img/faculty/charlie-barclay.jpg" width="200" alt="Photo of Charlie Barclay">
 
->Title  <br>
-Institution <br>
-City, Province, Canada 
+>MSc Graduate Student Researcher  <br>
+University of British Columbia <br>
+Vancouver, BC, Canada 
 >
-> --- email@email.com
+> --- cbarcl01@mail.ubc.ca
 
-Brief bio coming soon
+Charlie is an ontology curator at the Centre for Infectious Disease Genomics and One Health (CIDGOH), focusing on data standards for contextual data of genomic epidemiology, including wastewater surveillance. With five years of experience in data management, specializing in biodiversity and genomics data, she also actively contributes to the Public Health Alliance for Genomic Epidemiology (PHA4GE) and the Global Alliance for Genomics and Health (GA4GH).
 
 ### Facilitator
 
