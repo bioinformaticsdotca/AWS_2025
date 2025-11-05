@@ -303,7 +303,7 @@ The key is that any program that reads lines of text from standard input and wri
 
 ### Pipe Reading Comprehension
 
-A file called `annotation-dates.txt` (in the `data/collection` folder) contains the annotation dates for our strains in CSV format. Note the file contains some duplicate lines:
+A file called `annotation-dates.txt` (in the `data/collection` folder) contains the annotation dates and source location for our strains in CSV format. Note the file contains some duplicate lines:
 
 ```
 2021-05-23,atlanta
@@ -363,7 +363,7 @@ lab-strain
 ```
 
 
-The `uniq` command filters out adjacent matching lines in a file. How could you extend this pipeline (using `uniq` and another command) to find out what animals the file contains (without any duplicates in their names)?
+The `uniq` command filters out adjacent matching lines in a file. How could you extend this pipeline (using `uniq` and another command) to see the source location of the genomes in the file (without any duplicates in their names)?
 
 <details>
     <summary>
@@ -377,7 +377,7 @@ The `uniq` command filters out adjacent matching lines in a file. How could you 
 
 ### Which Pipe?
 
-The `uniq` command has a `-c` option which gives a count of the number of times a line occurs in its input. Assuming your current directory is `data/collection`, what command would you use to produce a table that shows the total number of times each E. coli strain appears in the file?
+The `uniq` command has a `-c` option which gives a count of the number of times a line occurs in its input. Assuming your current directory is `data/collection`, what command would you use to produce a table that shows the total number of times each *E. coli* strain appears in the file?
 
 1. `sort annotation-dates.txt | uniq -c`
 2. `sort -t, -k2,2 annotation-dates.txt | uniq -c`
@@ -430,7 +430,7 @@ $ wc -l *.txt | sort -n | head -n 5
 ```
 
 
-Whoops: one of the files is 60 lines shorter than the others. When we goes back and checks it, we sees that assay at 8:00 on a Monday morning — someone was probably in using the machine on the weekend, and forgot to reset it. Before re-running that sample, lets checks to see if any files have too much data:
+Whoops: one of the files is 60 lines shorter than the others. Hypothetically speaking, — someone was probably in using the machine on the weekend entering the data, and forgot to save the last few lines. Before re-running that sample, lets checks to see if any files have too much data:
 
 ```bash
 $ wc -l *.txt | sort -n | tail -n 5
