@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4. Searching and sorting through files | AWS/UNIX 2025</title>
   <meta name="description" content="Wwbsite for the Canadian Bioinformatics Workshops’ AWS/Unix primer" />
-  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4. Searching and sorting through files | AWS/UNIX 2025" />
   <meta property="og:type" content="book" />
@@ -387,7 +387,7 @@ The -n option specifies a numerical rather than an alphanumerical sort.
 </div>
 <div id="pipe-reading-comprehension" class="section level3 hasAnchor">
 <h3>Pipe Reading Comprehension<a href="searching-and-sorting-through-files.html#pipe-reading-comprehension" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A file called <code>annotation-dates.txt</code> (in the <code>data/collection</code> folder) contains the annotation dates for our strains in CSV format. Note the file contains some duplicate lines:</p>
+<p>A file called <code>annotation-dates.txt</code> (in the <code>data/collection</code> folder) contains the annotation dates and source location for our strains in CSV format. Note the file contains some duplicate lines:</p>
 <pre><code>2021-05-23,atlanta
 2021-05-19,branschweig
 2021-05-23,london
@@ -430,7 +430,7 @@ nevada
 texas
 texas
 lab-strain</code></pre>
-<p>The <code>uniq</code> command filters out adjacent matching lines in a file. How could you extend this pipeline (using <code>uniq</code> and another command) to find out what animals the file contains (without any duplicates in their names)?</p>
+<p>The <code>uniq</code> command filters out adjacent matching lines in a file. How could you extend this pipeline (using <code>uniq</code> and another command) to see the source location of the genomes in the file (without any duplicates in their names)?</p>
 <details>
 <summary>
 Solution
@@ -445,7 +445,7 @@ Solution
 </div>
 <div id="which-pipe" class="section level3 hasAnchor">
 <h3>Which Pipe?<a href="searching-and-sorting-through-files.html#which-pipe" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The <code>uniq</code> command has a <code>-c</code> option which gives a count of the number of times a line occurs in its input. Assuming your current directory is <code>data/collection</code>, what command would you use to produce a table that shows the total number of times each E. coli strain appears in the file?</p>
+<p>The <code>uniq</code> command has a <code>-c</code> option which gives a count of the number of times a line occurs in its input. Assuming your current directory is <code>data/collection</code>, what command would you use to produce a table that shows the total number of times each <em>E. coli</em> strain appears in the file?</p>
 <ol style="list-style-type: decimal">
 <li><code>sort annotation-dates.txt | uniq -c</code></li>
 <li><code>sort -t, -k2,2 annotation-dates.txt | uniq -c</code></li>
@@ -481,7 +481,7 @@ Option 4. is the correct answer. If you have difficulty understanding why, try r
   300 NENE01729B.txt
   300 NENE01736A.txt
   300 NENE01751A.txt</code></pre>
-<p>Whoops: one of the files is 60 lines shorter than the others. When we goes back and checks it, we sees that assay at 8:00 on a Monday morning — someone was probably in using the machine on the weekend, and forgot to reset it. Before re-running that sample, lets checks to see if any files have too much data:</p>
+<p>Whoops: one of the files is 60 lines shorter than the others. Hypothetically speaking, — someone was probably in using the machine on the weekend entering the data, and forgot to save the last few lines. Before re-running that sample, lets checks to see if any files have too much data:</p>
 <div class="sourceCode" id="cb58"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb58-1"><a href="searching-and-sorting-through-files.html#cb58-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 5</span></code></pre></div>
 <pre><code> 300 NENE02040B.txt
  300 NENE02040Z.txt
@@ -547,42 +547,42 @@ Solution
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/bioinformaticsdotca/AWS_2025/blob/main/004-searchSort.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["_main.pdf", "_main.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/bioinformaticsdotca/AWS_2025/blob/main/004-searchSort.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["_main.pdf", "_main.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>

@@ -197,31 +197,41 @@ You will need a UNIX environment (like a Linux/Mac computer or Windows Subsystem
 
 \subsection{Instructors}\label{instructors}
 
-\subsubsection{Dr.~Idowu Olawoye}\label{dr.-idowu-olawoye}
+\subsubsection{Chaitra Sarathy, PhD}\label{chaitra-sarathy-phd}
 
 \begin{quote}
-Postdoctoral Associate
-University of Western Ontario
-London, ON, Canada
-
---- \href{mailto:iolawoye@uwo.ca}{\nolinkurl{iolawoye@uwo.ca}}
+Bioinformatics Specialist, Neuron2Brain Lab (\url{https://neurontobrainlaboratory.ca/})
+Krembil Research Institute, University Health Network
+Toronto, ON, Canada
 \end{quote}
 
-Idowu is a postdoctoral associate in the Guthrie Lab at the University of Western Ontario. His research focuses on utilizing computational biology to understand transmission patterns, genomic evolution, and antimicrobial resistance of bacterial pathogens. He has been involved in numerous bioinformatics workshops and trainings across Africa and most recently in Canada.
+Dr.~Sarathy is Bioinformatics Researcher specializing in mathematical modeling and multi-omics integration, including bulk and single-cell RNA-seq analysis. Over the years, she has developed open-source, reproducible workflows for target discovery and machine learning models for patient stratification. Currently, she leads bioinformatics efforts at N2BL in Krembil Research Institute (\url{https://neurontobrainlaboratory.ca/}) focused on integrating multi-modal data to uncover disease mechanisms underlying neurological diseases. As a certified Carpentries Instructor, she is passionate about teaching and helping researchers build confidence in analyzing high-dimensional omics data. She likes to draw on her experiences across the software industry, academic research, and clinical settings to make her teaching practical and grounded in real-world scientific questions.
+
+\subsubsection{Zhibin Lu (he/his)}\label{zhibin-lu-hehis}
+
+\begin{quote}
+Senior Manager, Digital Research
+University Health Network
+Toronto, ON, Canada
+
+--- \href{mailto:zhibin@gmail.com}{\nolinkurl{zhibin@gmail.com}}
+\end{quote}
+
+Zhibin Lu is a senior manager at University Health Network Digital. He is responsible for UHN HPC operations and scientific software. He manages two HPC clusters at UHN, including system administration, user management, and maintenance of bioinformatics tools for HPC4health. He is also skilled in Next-Gen sequence data analysis and has developed and maintained bioinformatics pipelines at the Bioinformatics and HPC Core. He is a member of the Digital Research Alliance of Canada Bioinformatics National Team and Scheduling National Team.
 
 \subsection{Teaching Assistants}\label{teaching-assistants}
 
-\subsubsection{Charlie Barclay}\label{charlie-barclay}
+\subsubsection{Alyona Ivanova}\label{alyona-ivanova}
 
 \begin{quote}
-MSc Graduate Student Researcher
-University of British Columbia
-Vancouver, BC, Canada
+PhD Candidate
+University of Toronto, The Hospital for Sick Children
+Toronto, BC, Canada
 
---- \href{mailto:cbarcl01@mail.ubc.ca}{\nolinkurl{cbarcl01@mail.ubc.ca}}
+--- \href{mailto:alyona.ivanova@mail.utoronto.ca}{\nolinkurl{alyona.ivanova@mail.utoronto.ca}}
 \end{quote}
 
-Charlie is an ontology curator at the Centre for Infectious Disease Genomics and One Health (CIDGOH), focusing on data standards for contextual data of genomic epidemiology, including wastewater surveillance. With five years of experience in data management, specializing in biodiversity and genomics data, she also actively contributes to the Public Health Alliance for Genomic Epidemiology (PHA4GE) and the Global Alliance for Genomics and Health (GA4GH).
+Alyona is a graduate student at the University of Toronto pursuing PhD in Medical Sciences. Her research focuses on identifying novel therapies for targeting chemo-resistance in glioblastoma using spatial 'omics technologies. She works in close collaboration with clinicians, neuropathologists, scientists bridging the gap between clinical practice and fundamental lab research. Alyona is a Creative Director of Panoramics - A Vision, and an Executive Editor and Director of Distribution of the Institute of Medical Sciences Magazine.
 
 \subsection{Facilitator}\label{facilitator}
 
@@ -822,7 +832,7 @@ The redirection and pipes used in the last few commands are illustrated below:
 
 \begin{figure}
 \centering
-\pandocbounded{\includesvg[keepaspectratio]{img/redirects-and-pipes.svg}}
+\pandocbounded{\includesvg[keepaspectratio]{_main_files/img/redirects-and-pipes.svg}}
 \caption{redirects\_and\_pipes}
 \end{figure}
 
@@ -845,7 +855,7 @@ The key is that any program that reads lines of text from standard input and wri
 
 \subsection{Pipe Reading Comprehension}\label{pipe-reading-comprehension}
 
-A file called \texttt{annotation-dates.txt} (in the \texttt{data/collection} folder) contains the annotation dates for our strains in CSV format. Note the file contains some duplicate lines:
+A file called \texttt{annotation-dates.txt} (in the \texttt{data/collection} folder) contains the annotation dates and source location for our strains in CSV format. Note the file contains some duplicate lines:
 
 \begin{verbatim}
 2021-05-23,atlanta
@@ -896,13 +906,13 @@ texas
 lab-strain
 \end{verbatim}
 
-The \texttt{uniq} command filters out adjacent matching lines in a file. How could you extend this pipeline (using \texttt{uniq} and another command) to find out what animals the file contains (without any duplicates in their names)?
+The \texttt{uniq} command filters out adjacent matching lines in a file. How could you extend this pipeline (using \texttt{uniq} and another command) to see the source location of the genomes in the file (without any duplicates in their names)?
 
 Solution
 
 \subsection{Which Pipe?}\label{which-pipe}
 
-The \texttt{uniq} command has a \texttt{-c} option which gives a count of the number of times a line occurs in its input. Assuming your current directory is \texttt{data/collection}, what command would you use to produce a table that shows the total number of times each E. coli strain appears in the file?
+The \texttt{uniq} command has a \texttt{-c} option which gives a count of the number of times a line occurs in its input. Assuming your current directory is \texttt{data/collection}, what command would you use to produce a table that shows the total number of times each \emph{E. coli} strain appears in the file?
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -962,7 +972,7 @@ Now if we run
   300 NENE01751A.txt
 \end{verbatim}
 
-Whoops: one of the files is 60 lines shorter than the others. When we goes back and checks it, we sees that assay at 8:00 on a Monday morning --- someone was probably in using the machine on the weekend, and forgot to reset it. Before re-running that sample, lets checks to see if any files have too much data:
+Whoops: one of the files is 60 lines shorter than the others. Hypothetically speaking, --- someone was probably in using the machine on the weekend entering the data, and forgot to save the last few lines. Before re-running that sample, lets checks to see if any files have too much data:
 
 \begin{Shaded}
 \begin{Highlighting}[]
