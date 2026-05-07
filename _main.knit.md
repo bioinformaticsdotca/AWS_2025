@@ -118,7 +118,7 @@ Neha is passionate about advancing bioinformatics and data science training acro
 
 #### Riya Roy (she/her)
 
-<img src="./img/faculty/roya-roy.jpg" width="200" alt="Photo of Riya Roy">
+<img src="./img/faculty/riya-roy.jpg" width="200" alt="Photo of Riya Roy">
 
 >Regional Coordinator, CBH Prairies <br>
 Canadian Bioinformatics Hub, University of Manitoba  <br>
