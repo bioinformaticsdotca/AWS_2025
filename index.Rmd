@@ -1,5 +1,5 @@
 --- 
-title: "AWS/UNIX 2025"
+title: "AWS/UNIX 2026"
 author: Material by Jose Hector Galvez, Zhibin Lu & Rob Syme
 site: bookdown::bookdown_site
 documentclass: book
@@ -27,7 +27,7 @@ You will need a UNIX environment (like a Linux/Mac computer or Windows Subsystem
 
 ### Schedule
 
-**Microbial Genomics & Pathogen Genomic Epidemiology AWS/UNIX pre-session 2025**: Thursday, November 13, 2025
+**Single Cell Rna-seq Analysis AWS/UNIX pre-session 2025**: Thursday, May 21, 2026
 
 | (ET) |                      Module                     |
 |:-----:|:-----------------------------------------------:|
