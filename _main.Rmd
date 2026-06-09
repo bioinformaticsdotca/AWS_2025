@@ -74,7 +74,7 @@ Saskatoon, SK, Canada
 
 Diogo is a Postdoctoral Fellow at the Vaccines and Infectious Diseases Organisation (VIDO) at USask. Previously I did my PhD in the University of Sao Paulo, and I was also a Postdoc at OICR. I worked with many types of Bioinformatics pipelines, but mostly with Transcriptomics and Network Analysis.
 
-#### Zhibin Lu (he/his)
+#### Zhibin Lu (he/him)
 
 <img src="./img/faculty/Zhibin-Lu.jpeg" width="200" alt="Photo of Zhibin Lu">
 
