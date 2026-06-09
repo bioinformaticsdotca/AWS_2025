@@ -27,7 +27,7 @@ You will need a UNIX environment (like a Linux/Mac computer or Windows Subsystem
 
 ### Schedule
 
-**Single Cell Rna-seq Analysis AWS/UNIX pre-session 2026**: Thursday, May 21, 2026
+**RNA-seq Analysis AWS/UNIX pre-session 2026**: Tuesday, June 16, 2026
 
 | (ET) |                      Module                     |
 |:-----:|:-----------------------------------------------:|
